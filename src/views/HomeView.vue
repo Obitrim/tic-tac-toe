@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+  import GradientBgLayout from "@/components/layout/GradientBgLayout.vue";
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <GradientBgLayout>
+    <h1 class="text-red-500">Home page</h1>
+  </GradientBgLayout>
 </template>

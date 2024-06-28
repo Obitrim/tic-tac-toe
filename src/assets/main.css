@@ -11,9 +11,17 @@
 
 #app,
 .gradient-pattern-bg {
-  background-image: url(/public/images/contour-lines.png),
-    linear-gradient(to bottom right red, transparent),
-    linear-gradient(to bottom left blue, transparent);
+  background: linear-gradient(
+      to bottom right,
+      rgba(169, 18, 18, 0.8),
+      transparent
+    ),
+    linear-gradient(to bottom left, rgb(88, 5, 165), transparent),
+    linear-gradient(to top, black 99.999%, transparent);
+}
+
+.contour-lines {
+  background: url(/public/images/contour-lines.png);
 }
 
 a,
@@ -32,5 +40,25 @@ body {
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: Pinmold;
+    src: url("/public/fonts/pinmold/Pinmolddemo.otf");
+    font-weight: bolder;
+  }
+  @font-face {
+    font-family: Electrom;
+    src: url("/public/fonts/elecstrom/ElecstromRegular-vmyoy.otf"),
+      url("/public/fonts/elecstrom/ElecstromRegular-w1y4P.ttf");
+    font-weight: normal, normal;
+  }
+  
+  @font-face {
+    font-family: Zekton;
+    src: url("/public/fonts/zekton/zekton.otf");
+    font-weight: normal;
   }
 }

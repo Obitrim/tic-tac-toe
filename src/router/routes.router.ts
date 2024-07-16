@@ -1,5 +1,9 @@
 import HomeView from "@/views/HomeView.vue";
-import GameView from "@/views/GameView.vue";
+
+// Game
+import GameView from "@/views/game/GameView.vue";
+import Welcome from "@/views/game/Welcome.vue";
+import GameSession from "@/views/game/GameSession.vue";
 
 export const routes = [
   {
@@ -11,5 +15,17 @@ export const routes = [
     path: "/app",
     name: "game",
     component: GameView,
+    children: [
+      {
+        path: "",
+        name: "welcome",
+        component: Welcome,
+      },
+      {
+        path: "play",
+        name: "game-session",
+        component: GameSession,
+      },
+    ],
   },
 ];

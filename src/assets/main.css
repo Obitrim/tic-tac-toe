@@ -27,7 +27,7 @@
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  /* color: hsla(160, 100%, 37%, 1); */
   transition: 0.4s;
   padding: 3px;
 }
@@ -55,7 +55,7 @@ body {
       url("/public/fonts/elecstrom/ElecstromRegular-w1y4P.ttf");
     font-weight: normal, normal;
   }
-  
+
   @font-face {
     font-family: Zekton;
     src: url("/public/fonts/zekton/zekton.otf");
